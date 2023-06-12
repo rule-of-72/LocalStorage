@@ -30,6 +30,10 @@ For example, your app may keep a configuration file called `config.json` in one 
 	- For example: configuration files from your server that the app caches locally.
 - A user file that the app copies to its sandbox for repeated use, even if the original file gets moved or deleted.
 
+### Hint
+
+If you want your local files to be visible to your app’s users when they plug their device into their Mac, add the property “Application supports iTunes file sharing: YES” to the Custom iOS Target Properties list on the Info tab of your app target’s settings in Xcode. Then your users can open their device in Finder, click on the Files tab, expand the entry for your app, and see the files you have written.
+
 ## Document Picker with Strong Delegate
 
 The `DocumentPickerWithStrongDelegate` class subclasses the standard Apple `UIDocumentPickerViewController` and supports two additional patterns for handling results:
